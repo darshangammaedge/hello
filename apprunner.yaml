@@ -1,0 +1,10 @@
+version: 1.0
+runtime: python311
+build:
+  commands:
+    build:
+      - echo "No build steps required for static HTML"
+run:
+  command: python3 -m http.server 8080
+  network:
+    port: 8080
